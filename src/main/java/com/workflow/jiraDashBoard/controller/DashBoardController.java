@@ -97,6 +97,12 @@ public class DashBoardController {
 		}
 	}
 
+	/**
+	 * 
+	 * @param ticketId
+	 * @return
+	 * @throws Exception
+	 */
 	@PutMapping(value = APIReference.CLOSE_TICKET, produces = { MediaType.APPLICATION_JSON_VALUE })
 	public ResponseEntity<ResponseWrapper<Ticket>> closeTicket(@PathVariable Long ticketId) throws Exception {
 		try {
@@ -109,7 +115,13 @@ public class DashBoardController {
 			throw ex;
 		}
 	}
-
+	
+	/**
+	 * 
+	 * @param ticketId
+	 * @return
+	 * @throws Exception
+	 */
 	@PutMapping(value = APIReference.RETURN_TICKET, produces = { MediaType.APPLICATION_JSON_VALUE })
 	public ResponseEntity<ResponseWrapper<Ticket>> returnTicket(@PathVariable Long ticketId) throws Exception {
 		try {
@@ -121,7 +133,13 @@ public class DashBoardController {
 			throw ex;
 		}
 	}
-
+	
+	/**
+	 * 
+	 * @param ticketId
+	 * @return
+	 * @throws Exception
+	 */
 	@PutMapping(value = APIReference.REJECT_TICKET, produces = { MediaType.APPLICATION_JSON_VALUE })
 	public ResponseEntity<ResponseWrapper<Ticket>> rejectTicket(@PathVariable Long ticketId) throws Exception {
 		try {

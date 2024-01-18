@@ -35,6 +35,7 @@ public class TicketServiceImplementation implements TicketService {
 	/**
 	 * 
 	 */
+	@Override
 	@Transactional
 	public Ticket createTicket(Ticket ticket) throws Exception {
 		try {
@@ -53,6 +54,7 @@ public class TicketServiceImplementation implements TicketService {
 	/**
 	 * 
 	 */
+	@Override
 	@Transactional
 	public Ticket assignTicket(Long ticketId, Long assigneeId, Long reporterId) throws Exception {
 		try {
